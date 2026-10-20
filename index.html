@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TechCraft টুলস | ফ্রি ও সাশ্রয়ী অনলাইন টুল</title>
+<meta name="description" content="অনলাইন সেলারদের জন্য সেলার মেমো, পোস্টার মেকার আর ডিজিটাল সার্ভিস, সব এক জায়গায়, বাংলায়।">
+<meta name="theme-color" content="#07120e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect x='6' y='6' width='188' height='188' rx='44' fill='%2307120e' stroke='%23e9b949' stroke-width='6'/%3E%3Crect x='24' y='62' width='60' height='22' rx='6' fill='%23e9b949'/%3E%3Crect x='43' y='62' width='22' height='82' rx='6' fill='%23e9b949'/%3E%3Cpath d='M166 76A36 36 0 1 0 166 124' fill='none' stroke='%233be28f' stroke-width='22' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@500;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#07120e;--bg2:#0b1914;--card:#10231b;--line:#1f3a2d;--fg:#e9f3ee;--muted:#98ada2;--gold:#e9b949;--goldink:#241a00;--mint:#3be28f;--mintink:#032012;
+--display:'Anek Bangla','Hind Siliguri',system-ui,sans-serif;--body:'Hind Siliguri',system-ui,sans-serif;color-scheme:dark}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.65;
+padding-inline:max(18px,env(safe-area-inset-left,0px));background-image:radial-gradient(ellipse 90% 45% at 50% -8%,rgba(59,226,143,.18),transparent 70%)}
+.wrap{max-width:1040px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);line-height:1.2;margin:0}p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--mint);outline-offset:3px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.brand{display:flex;align-items:center;gap:11px}.brand svg{width:40px;height:40px}
+.brand b{font-family:var(--display);font-size:20px;font-weight:800;display:block;line-height:1.1}
+.brand small{font-family:ui-monospace,monospace;font-size:10.5px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;display:block}
+.btn{font:inherit;font-weight:700;cursor:pointer;border:1px solid transparent;border-radius:14px;padding:13px 22px;background:var(--gold);color:var(--goldink);text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:transform .15s,filter .15s}
+.btn:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.btn.mint{background:var(--mint);color:var(--mintink)}.btn.ghost{background:transparent;color:var(--fg);border-color:var(--line)}.btn.ghost:hover{border-color:var(--mint)}
+.btn.sm{padding:9px 16px;font-size:15px;border-radius:11px}
+.hero{padding:34px 0 26px;display:grid;gap:18px;justify-items:start}
+.tag{font-family:ui-monospace,monospace;font-size:12.5px;letter-spacing:.1em;color:var(--mint);border:1px solid var(--line);background:var(--bg2);padding:5px 14px;border-radius:99px}
+.hero h1{font-size:clamp(34px,8vw,64px);font-weight:800;max-width:15ch;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--mint)}
+.hero p{color:var(--muted);font-size:19px;max-width:54ch}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:26px;flex-wrap:wrap;margin-top:8px}
+.stats div{font-size:14.5px;color:var(--muted)}.stats b{display:block;font-family:var(--display);font-size:26px;color:var(--fg);font-weight:800}
+section{padding:34px 0}
+.sh{display:grid;gap:6px;margin-bottom:22px}.sh h2{font-size:clamp(26px,5.5vw,38px);font-weight:800}.sh p{color:var(--muted)}
+.cards{display:grid;gap:18px}
+@media(min-width:820px){.cards{grid-template-columns:repeat(3,1fr)}}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:20px;display:grid;gap:14px;align-content:start;position:relative;overflow:hidden;transition:transform .2s,border-color .2s}
+.tool:hover{transform:translateY(-4px);border-color:var(--mint)}
+.tool .art{height:170px;border-radius:16px;background:var(--bg2);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden;position:relative}
+.tool h3{font-size:24px;font-weight:800}
+.tool p{color:var(--muted);font-size:16px}
+.tool ul{margin:0;padding:0;list-style:none;display:grid;gap:4px;font-size:15.5px}
+.tool li::before{content:"✓ ";color:var(--mint);font-weight:700}
+.price{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.price b{font-family:var(--display);font-size:30px;font-weight:800;color:var(--gold)}.price span{color:var(--muted);font-size:14.5px}
+.badge{position:absolute;top:14px;right:14px;z-index:2;font-family:ui-monospace,monospace;font-size:12px;font-weight:700;background:var(--mint);color:var(--mintink);padding:3px 12px;border-radius:99px}
+.badge.g{background:var(--gold);color:var(--goldink)}
+/* mini art */
+.m1{width:112px;background:#fff;color:#14201a;border-radius:8px;padding:9px;font-size:9.5px;line-height:1.4;box-shadow:0 10px 30px rgba(0,0,0,.45);transform:rotate(-4deg)}
+.m1 b{display:block;font-size:11.5px;border-bottom:2px solid #14201a;padding-bottom:3px;margin-bottom:4px}
+.m1 div{display:flex;justify-content:space-between;border-bottom:1px solid #e6ece8;padding:2px 0}
+.m1 .t{background:#14201a;color:#e9b949;margin-top:5px;padding:4px 6px;border-radius:5px;font-weight:700}
+.m2{width:128px;height:128px;border-radius:14px;background:linear-gradient(145deg,#0b2a20,#0f3d2d);border:2px solid var(--mint);padding:9px;display:grid;align-content:space-between;box-shadow:0 10px 30px rgba(0,0,0,.45);transform:rotate(3deg)}
+.m2 i{font-style:normal;font-size:8.5px;background:var(--mint);color:var(--mintink);padding:1px 8px;border-radius:99px;width:max-content;font-weight:700}
+.m2 b{font-family:var(--display);font-size:16px;line-height:1.1}.m2 s{color:var(--gold);font-size:13px;font-weight:800;text-decoration:none}
+.m2 .p{background:var(--gold);color:var(--goldink);border-radius:99px;padding:2px 10px;font-size:11px;font-weight:800;width:max-content}
+.m3{display:grid;grid-template-columns:repeat(2,70px);gap:8px;transform:rotate(-2deg)}
+.m3 span{height:56px;border-radius:12px;display:grid;place-items:center;font-size:24px;background:var(--card);border:1px solid var(--line)}
+.steps{display:grid;gap:16px}
+@media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+.st{display:grid;gap:8px;padding:20px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,var(--card),transparent)}
+.st i{font-style:normal;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--mint);color:var(--mintink);font-family:var(--display);font-weight:800;font-size:19px}
+.st h3{font-size:21px}.st p{color:var(--muted);font-size:16px}
+.faq{display:grid;gap:10px}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:4px 18px}
+summary{cursor:pointer;font-weight:700;padding:12px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--mint);font-size:22px;line-height:1}
+details[open] summary::after{content:"−"}
+details p{color:var(--muted);padding-bottom:14px;font-size:16px}
+.cta{margin:20px 0 10px;padding:30px 22px;border-radius:26px;border:1px solid var(--gold);background:linear-gradient(135deg,rgba(233,185,73,.16),rgba(59,226,143,.1));display:grid;gap:12px;justify-items:start}
+.cta h2{font-size:clamp(24px,5.5vw,34px)}.cta p{color:var(--muted)}
+footer{padding:26px 0 40px;color:var(--muted);font-size:14.5px;text-align:center;display:grid;gap:6px}
+.fl{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.fl a{color:var(--muted)}.fl a:hover{color:var(--mint)}
+@media(prefers-reduced-motion:no-preference){.tool,.st{animation:rise .6s ease both}.tool:nth-child(2),.st:nth-child(2){animation-delay:.08s}.tool:nth-child(3),.st:nth-child(3){animation-delay:.16s}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <div class="brand">
+    <svg viewBox="0 0 200 200" aria-hidden="true"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12342a"/><stop offset="1" stop-color="#07120e"/></linearGradient></defs><rect x="6" y="6" width="188" height="188" rx="44" fill="url(#g1)" stroke="#e9b949" stroke-width="6"/><rect x="24" y="62" width="60" height="22" rx="6" fill="#e9b949"/><rect x="43" y="62" width="22" height="82" rx="6" fill="#e9b949"/><path d="M166 76A36 36 0 1 0 166 124" fill="none" stroke="#3be28f" stroke-width="22" stroke-linecap="round"/></svg>
+    <div><b>TechCraft</b><small>Digital Solutions</small></div>
+  </div>
+  <a class="btn ghost sm" id="nwa" href="#">WhatsApp</a>
+</nav>
+
+<header class="hero">
+  <span class="tag">অনলাইন সেলারদের জন্য</span>
+  <h1>ছোট ব্যবসার বড় কাজ, <em>সহজ টুলে</em></h1>
+  <p>মেমো, কুরিয়ার স্লিপ, পণ্যের পোস্টার সব নিজেই বানান, বাংলায়। ডিজাইনার বা হিসাবরক্ষক লাগবে না, ফ্রিতে শুরু করুন।</p>
+  <div class="acts"><a class="btn mint" href="#tools">টুলগুলো দেখুন</a><a class="btn ghost" id="hwa" href="#">প্রশ্ন আছে? মেসেজ দিন</a></div>
+  <div class="stats"><div><b>বাংলায়</b>সব লেখা ও ডিজাইন</div><div><b>ফ্রি</b>শুরু করুন, কার্ড লাগে না</div><div><b>একবারেই</b>মাসিক ফি নেই</div></div>
+</header>
+
+<section id="tools">
+  <div class="sh"><h2>আমাদের টুলস</h2><p>ফোনেই চলে, কিছু ইনস্টল করতে হয় না।</p></div>
+  <div class="cards">
+    <article class="tool">
+      <span class="badge">১০টা ফ্রি</span>
+      <div class="art"><div class="m1"><b>অর্ডার মেমো</b><div><span>থ্রিপিস × ১</span><span>১,২৫০</span></div><div><span>হিজাব × ২</span><span>৪৪০</span></div><div><span>ডেলিভারি</span><span>৬০</span></div><div class="t"><span>নেবেন</span><span>১,২০০</span></div></div></div>
+      <h3>সেলার মেমো</h3>
+      <p>১০ সেকেন্ডে অর্ডার মেমো আর কুরিয়ার স্লিপ। ছবি করে সরাসরি WhatsApp-এ পাঠান।</p>
+      <ul><li>হিসাব নিজে হয়ে যায়</li><li>অর্ডার তালিকা ও বিক্রির হিসাব</li><li>প্রিন্ট বা ছবি, দুইভাবেই</li></ul>
+      <div class="price"><b>৳২৯৯</b><span>একবারেই, প্রথম ১০টা ফ্রি</span></div>
+      <a class="btn mint" id="l-memo" href="#">ফ্রিতে চালু করুন →</a>
+    </article>
+    <article class="tool">
+      <span class="badge g">৫টা ফ্রি</span>
+      <div class="art"><div class="m2"><i>নতুন কালেকশন</i><b>প্রিমিয়াম<br>থ্রিপিস</b><span class="p">৳১,২৫০</span></div></div>
+      <h3>পোস্টার মেকার</h3>
+      <p>ফেসবুক পোস্ট, অফার আর মেনুর ডিজাইন ১ মিনিটে। ছবি দিন, দাম লিখুন, ডাউনলোড করুন।</p>
+      <ul><li>১০টা টেমপ্লেট, ৭টা রং, ৪টা ফন্ট</li><li>পোস্ট ও স্টোরি, দুই সাইজ</li><li>প্রো-তে ওয়াটারমার্ক নেই</li></ul>
+      <div class="price"><b>৳১৯৯</b><span>একবারেই, ৫টা ডাউনলোড ফ্রি</span></div>
+      <a class="btn mint" id="l-poster" href="#">ফ্রিতে চালু করুন →</a>
+    </article>
+    <article class="tool">
+      <span class="badge g">সার্ভিস ও কোর্স</span>
+      <div class="art"><div class="m3"><span>🎨</span><span>💻</span><span>📈</span><span>🎓</span></div></div>
+      <h3>ডিজিটাল সার্ভিস ও কোর্স</h3>
+      <p>গ্রাফিক ডিজাইন, ওয়েব অ্যাপ, অনলাইন বিজনেস সেটআপ আর হাতে-কলমে স্কিল কোর্স।</p>
+      <ul><li>সময়মতো ডেলিভারি</li><li>সাশ্রয়ী মূল্য</li><li>কাজের মান নিশ্চিত</li></ul>
+      <div class="price"><b>প্যাকেজ</b><span>প্রয়োজন অনুযায়ী</span></div>
+      <a class="btn" id="l-svc" href="#">সার্ভিস ও কোর্স দেখুন →</a>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="sh"><h2>কীভাবে শুরু করবেন</h2><p>তিন ধাপ, কোনো ঝামেলা নেই।</p></div>
+  <div class="steps">
+    <div class="st"><i>১</i><h3>ফ্রিতে চালান</h3><p>টুল খুলুন আর সরাসরি ব্যবহার শুরু করুন। সাইন-আপ বা পাসওয়ার্ড লাগে না।</p></div>
+    <div class="st"><i>২</i><h3>পছন্দ হলে আনলক</h3><p>ফ্রি সীমা শেষ হলে Nagad-এ টাকা পাঠান আর WhatsApp-এ জানান।</p></div>
+    <div class="st"><i>৩</i><h3>কোড বসান</h3><p>আপনার নম্বরের জন্য একটা কোড পাবেন। বসালেই সীমাহীন, একবারের টাকাতেই।</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="sh"><h2>সাধারণ প্রশ্ন</h2></div>
+  <div class="faq">
+    <details><summary>এগুলো কি সত্যিই ফ্রি?</summary><p>প্রথম ১০টা মেমো আর ৫টা পোস্টার ডাউনলোড ফ্রি। এর পর সীমাহীন ব্যবহারের জন্য একবারের পেমেন্ট।</p></details>
+    <details><summary>মাসে মাসে টাকা দিতে হবে?</summary><p>না। একবার আনলক করলে আর কোনো মাসিক বা বাৎসরিক ফি নেই।</p></details>
+    <details><summary>আমার তথ্য কি অন্য কেউ দেখতে পাবে?</summary><p>না। আপনার অর্ডার আর দোকানের তথ্য শুধু আপনার ফোনেই থাকে, আমাদের সার্ভারে যায় না। তাই মাঝে মাঝে ব্যাকআপ নিয়ে রাখা ভালো।</p></details>
+    <details><summary>কোডটা কীভাবে পাব?</summary><p>Nagad-এ টাকা পাঠিয়ে WhatsApp-এ আপনার মোবাইল নম্বর জানান। কিছুক্ষণের মধ্যে কোড পাঠিয়ে দেওয়া হবে।</p></details>
+    <details><summary>ফোনে চলবে তো?</summary><p>হ্যাঁ, টুলগুলো ফোনের জন্যই বানানো। Chrome-এ খুলুন, কিছু ইনস্টল করতে হবে না।</p></details>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>আপনার ব্যবসার জন্য আলাদা কিছু দরকার?</h2>
+  <p>কাস্টম ডিজাইন, ওয়েবসাইট বা কোর্স নিয়ে জানতে সরাসরি মেসেজ করুন।</p>
+  <a class="btn mint" id="cwa" href="#">WhatsApp-এ মেসেজ দিন</a>
+</div>
+
+<footer>
+  <div class="fl"><a id="fs" href="#">সার্ভিস</a><a id="fm" href="#">সেলার মেমো</a><a id="fp" href="#">পোস্টার মেকার</a></div>
+  <div>© TechCraft Digital Solutions · <span id="fe"></span></div>
+</footer>
+</div>
+<script>
+/* ===== আপনার সেটিংস ===== */
+var CONFIG = {
+  whatsapp: '8801942319608',
+  email: 'mdtamkenaltamver@gmail.com',
+  memo:   'https://tamkinacademy.github.io/techcraft-memos/',
+  poster: 'https://tamkinacademy.github.io/techcraft-poster/',   /* আপনার পোস্টার সাইটের আসল লিংক বসান */
+  services: 'https://tamkinacademy.github.io/TechCraft-Digital-Solutions-/'
+};
+var $=function(i){return document.getElementById(i)};
+var wa='https://wa.me/'+CONFIG.whatsapp+'?text='+encodeURIComponent('আসসালামু আলাইকুম, TechCraft টুলস সম্পর্কে জানতে চাই।');
+['nwa','hwa','cwa'].forEach(function(i){$(i).href=wa;$(i).target='_blank';$(i).rel='noopener'});
+[['l-memo','fm',CONFIG.memo],['l-poster','fp',CONFIG.poster],['l-svc','fs',CONFIG.services]].forEach(function(a){
+  [a[0],a[1]].forEach(function(i){ var e=$(i); if(a[2]){e.href=a[2]} else {e.removeAttribute('href'); e.textContent=e.id==='fp'||e.id==='fm'||e.id==='fs'?e.textContent:'শীঘ্রই আসছে';} });
+});
+$('fe').textContent=CONFIG.email;
+</script>
+</body>
+</html>
